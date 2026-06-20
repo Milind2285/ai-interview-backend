@@ -2,5 +2,5 @@ services:
   - type: web
     name: ai-interview-backend
     runtime: java
-    buildCommand: ./mvnw clean package
+    buildCommand: chmod +x mvnw && ./mvnw clean package
     startCommand: java -jar target/*.jar
